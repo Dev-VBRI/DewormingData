@@ -164,7 +164,7 @@ var mList = {
 'Karakagudem','Kothagudem','Laxmidevipalli','Manuguru','Mulkalapally','Palvoncha','Pinapaka','Sujathanagar','Tekulapalli','Yellandu'],
           HANUMAKONDA:  ['Athmakur','Bheemadevarpalli','Damera','Dharmasagar','Elkathurthy','Hanamkonda','Hasanparthy','Inavole','Kamalapur','Khazipet','NADIKUDA','Parkal','Shayampet','Velair'],
 	HYDERABAD:  ['Amberpet','Ameerpet','Asif Nagar','Bahadurpura','Bandlaguda','Charminar','Golconda','Himayatnagar','Khairatabad','Marredpally','Musheerabad','Nampally','Saidabad','Secunderabad','Shaikpet','Tirumalgiri'],
-        Jagitial:['Beerpur','Buggaram','Dharmapuri','Gollapalli','Ibrahimpatnam','Jagitial','Jagitial Rural','Kathlapur','Kodimial','Korutla','Mallapur','Mallial','Medipalli','Metpalli','Pegadapalli','Raikal','Sarangapur','Velgatur'],
+        JAGITIAL:['Beerpur','Buggaram','Dharmapuri','Gollapalli','Ibrahimpatnam','Jagitial','Jagitial Rural','Kathlapur','Kodimial','Korutla','Mallapur','Mallial','Medipalli','Metpalli','Pegadapalli','Raikal','Sarangapur','Velgatur'],
         JANGOAN:['Bachannapet','Chilpur','Devaruppula','Ghanpur (Station)','Jangoan','Kodakandla','LingalaGhanpur','Narmetta','Palakurthy','Ragunathpally','Tharigoppula','Zaffergadh'],
         JAYASHANKARBHUPALAPALLY   :['Bhupalpally','Chityal','Ghanpur (Mulug)','Kataram','Mahadevpur','Malharrao','Mogullapally','MUTHARAM MAHADEVPUR','Palimela','Regonda','Tekumatla'],
  JOGULAMBAGADWAL:['Alampur','Dharoor','Gadwal','Ghattu','Ieeja','Itikyala','Kaloor Thimmandoddi','Maldakal','Manopad','Rajoli','Undavelly','Waddepally'],
@@ -229,7 +229,7 @@ el_parent.addEventListener('change', function populate_child(e){
 
 <script>
             const scriptURL = 
-            'https://script.google.com/macros/s/AKfycbzWcLQci1w2Pchc80Xi4_BuZEK4GpddNewfxbwXUR_eHAYydCDYw1bBm3iw_LAFcAf3/exec'
+            'https://script.google.com/macros/s/AKfycby5ZXjH0PZkFmCTwsal5GyvWDbqiiDDb-jhQFCfyt3oH0NJ8ApXN03DleNOGUMmEf_C/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
@@ -237,6 +237,7 @@ el_parent.addEventListener('change', function populate_child(e){
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("Thanks for Contacting us..! Your Data is submitted..."))
                 .catch(error => console.error('Error!', error.message))
+		    e.target.reset();
             })
           </script>
 
