@@ -11,7 +11,8 @@
 
 <body>
   
-	<h2><center><b> De-Worming Data Form </B> </center> </h2>
+	<h1><center><b> TS Veterinary and Animal Husbandry </B> </center> </h1>
+		<h2><center><b>  2nd Round Sheep and Goat Deworming Data Form - 2023</B> </center> </h2>
 	
         <form name="google-sheet"  method="POST" autocomplete="off" > 
 
@@ -33,7 +34,7 @@
 			<option value="JAGITIAL">JAGITIAL</option>
 			<option value="JANGOAN">JANGOAN</option>
 			<option value="JAYASHANKARBHUPALAPALLY">JAYASHANKAR BHUPALAPALLY</option>
-			<option value="JOGULAMBA GADWAL">JOGULAMBA GADWAL</option>
+			<option value="JOGULAMBAGADWAL">JOGULAMBA GADWAL</option>
 			<option value="KAMAREDDY">KAMAREDDY</option>
 			<option value="KARIMNAGAR">KARIMNAGAR</option>
 			<option value="KHAMMAM">KHAMMAM</option>
@@ -143,7 +144,8 @@
 
 <script language="javascript" type="text/javascript">  
       var mList = {
-	ADILABAD:['ADILABAD RURAL','ADILABAD URBAN','BAZARHATNOOR','Bela','BHEEMPUR','Boath','GADIGUDA','GUDIHATNOOR','Ichoda','Inderavelly','JAINATH','MAVALA','Narnoor','Neradigonda','SIRIKONDA','Talamadugu','Tamsi','Utnoor'],
+		chocolate:["aaa",'aa','rr'],
+	 ADILABAD:['ADILABAD RURAL','ADILABAD URBAN','BAZARHATNOOR','Bela','BHEEMPUR','Boath','GADIGUDA','GUDIHATNOOR','Ichoda','Inderavelly','JAINATH','MAVALA','Narnoor','Neradigonda','SIRIKONDA','Talamadugu','Tamsi','Utnoor'],
         BHADRADRIKOTHAGUDEM:  ['Allapalli','Annapureddypalli','Aswapuram','Aswaraopeta','Bhadrachalam','Burgampahad','Chandrugonda','Cherla','Chunchupalli','Dammapeta','Dummugudem','Gundala','Julurpadu',
                   'Karakagudem','Kothagudem','Laxmidevipalli','Manuguru','Mulkalapally','Palvoncha','Pinapaka','Sujathanagar','Tekulapalli','Yellandu'],
         HANUMAKONDA:  ['Athmakur','Bheemadevarpalli','Damera','Dharmasagar','Elkathurthy','Hanamkonda','Hasanparthy','Inavole','Kamalapur','Khazipet','NADIKUDA','Parkal','Shayampet','Velair'],
@@ -184,11 +186,6 @@
 	el_parent = document.getElementById("parent_select");
 	el_child = document.getElementById("child_select");
  
-
-	for (key in mList) {
-			el_parent.innerHTML = el_parent.innerHTML + '<option>'+ key +'</option>';
-			}
-
 	el_parent.addEventListener('change', function populate_child(e){
 				el_child.innerHTML = '';
 				itm = e.target.value;
@@ -203,7 +200,7 @@
 
 	<script>
             const scriptURL = 
-            'https://script.google.com/macros/s/AKfycby5ZXjH0PZkFmCTwsal5GyvWDbqiiDDb-jhQFCfyt3oH0NJ8ApXN03DleNOGUMmEf_C/exec'
+            'https://script.google.com/macros/s/AKfycbwlLq-dd9eGPeVPrTxtU_QxbeGWPR1xJYkFcZLMoMAOi2k4T2iIcYLf-ZKScHEHsSm6Lg/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
