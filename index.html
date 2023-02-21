@@ -5,57 +5,25 @@
         <meta charset="utf-8">
         <title><b>DEWORMING PROGRAM</b></title>
         <!-- Load external CSS styles -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
          <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
      </head>
 
 <body>
   
-	<h2><center><b> Deworming Data Form </B> </center> </h2>
+	<h2><center><b> De-Worming Data Form </B> </center> </h2>
 	
-        <form name="google-sheet"  method="POST" autocomplete="off">
+        <form name="google-sheet"  method="POST" autocomplete="off" > 
 
-  	<div class="field">
-		<label for="dateW"><b>Date of Deworming : </b></label>
+  	<div class="field" > 
+		<label for="dateW"><b>   Date of Deworming : </b></label>
 		<input type="date" id="dateW" name="dateW" placeholder="Enter Date of deworming" />
 		<small></small>
-	</div>
+	</div> <br> <br>
 
-	<div class="field">
-		<label for="Fname"><b>Farmer Name : </b></label>
-		<input type="text" id="name" name="Fname" placeholder="Enter farmer name" />
-		<small></small>
-	</div>
-		
-	<div class="field">
-		<label for="phone"><b> Phone Number : </b></label>
-		<input type="tel" id="phone" name="phone" 
-   			 pattern="[0-9]{10}" required
-   			 placeholder="Enter your 10 digit phone Number" />
-		<small></small>
-	</div>
-
- 	 <div class="field">
-		<label for="caste"> <b> Caste : </b></label>
-		<input type="text" id="caste" name="caste" placeholder="Enter caste" />
-		<small></small>
-	</div>
-		
-	<div class="field">
-		<label for="Snumber"><b> No. Of Sheep Dewormed : </b></label>
-		<input type="number" id="Snumber" min=0 max=10000 name="Snumber" placeholder="Enter sheep dewormed number" />
-		<small></small>
-	</div>
-		
-  	<div class="field">
-		<label for="Gnumber"> <b> No. Of Goats Dewormed :</b></label>
-		<input type="number" id="Gnumber" min=0 name="Gnumber" placeholder="Enter goat dewormed number" />
-		<small></small>
-	</div>
-
-
+	
 	<div class="wrapper">
-		<label > <b> District : </b></label>
+		<label > <b> District Name :  </b></label>
 		<select id="parent_select" name="District" class ="parent_select">
 			<option  value="District">Select District</option>
 			<option  value="ADILABAD">ADILABAD</option>
@@ -91,39 +59,82 @@
 			<option value="WANAPARTHY">WANAPARTHY</option>
 			<option value="WARANGAL">WARANGAL</option>
 			<option value="YADADRIBHUVANAGIRI">YADADRI BHUVANAGIRI</option>
-		   </select>
+		</select>
+		<br> <br>
+    
+        <label > <b> Mandal Name  :  </b></label>
+	        <select id="child_select" name ="Mandal" ></select>
+        </div><br> <br>
 		
-                    <br>
-                 <label > <b> Mandal :  </b></label>
-	            <select id="child_select" name ="Mandal" ></select>
-                 </div>
-		
-                  <div class="field">
-			<label > <b> Village :  </b></label>
+         <div class="field">
+			        <label > <b> Village Name  :  </b></label>
 	                <input type="TEXT" id="Village"  name="Village" placeholder="Enter village name" />
-		         <small></small>
-		  </div>
+		            <small></small>
+		</div><br> <br>
+
+
+	<div class="field">
+		<label for="Fname"><b>Farmer Name : </b></label>
+		<input type="text" id="name" name="Fname" placeholder="Enter farmer name" />
+		<small></small>
+	</div><br> <br>
+		
+	<div class="field">
+		<label for="phone"><b> Phone Number : </b></label>
+		<input type="tel" id="phone" name="phone" 
+   			 pattern="[0-9]{10}" required
+   			 placeholder="Enter your 10 digit phone Number" />
+		<small></small>
+	</div><br> <br>
+
+ 	 <div class="field">
+		<label for="caste"> <b> Caste :  </b></label>
+		<select name="caste">
+			<option value="vas">OC</option>
+		    <option value="vlo">BC</option>
+			<option value="vjo">SC</option>
+		    <option value="lsa">ST</option>
+			<option value="va">others</option>
+		  
+	   </select>
+
+
+		<small></small>
+	</div><br> <br>
+		
+	<div class="field">
+		<label for="Snumber"><b> No. Of Sheep Dewormed : </b></label>
+		<input type="number" id="Snumber" min=0 max=10000 name="Snumber" placeholder="Enter sheep dewormed number" />
+		<small></small>
+	</div><br> <br>
+		
+  	<div class="field">
+		<label for="Gnumber"> <b> No. Of Goats Dewormed :</b></label>
+		<input type="number" id="Gnumber" min=0 name="Gnumber" placeholder="Enter goat dewormed number" />
+		<small></small>
+	</div><br> <br>
+
 
 		<div class="field">
 	        	<label for="Ename"> <b> Employee Name: </b></label>
 		         <input type="text" id="Ename" name="Ename" placeholder="Enter Employee name" />
 		          <small></small>
-		</div>
+		</div><br> <br>
 
-                 <div class="field">
+         <div class="field">
 			<label > <b> Designation :  </b></label>
 			<select name="Designation">
- 			   <option value="vas">VAS</option>
+ 			    <option value="vas">VAS</option>
 			    <option value="vlo">VLO</option>
  			    <option value="vjo">JVO</option>
 			    <option value="lsa">LSA</option>
    			    <option value="va">VA</option>
-    			    <option value="ds">DS</option>
+    			<option value="ds">DS</option>
    			    <option value="gpm">GPM</option>
    			    <option value="pm">PM</option>
    			    <option value="ps">PS</option>
-                          </select>
-		    </div>
+            </select>
+		 </div><br> <br>
 
 
 		<button type="submit" name="submit">Submit</button>
