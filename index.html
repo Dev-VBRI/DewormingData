@@ -108,7 +108,7 @@
 		
   	<div class="field">
 		<label for="Gnumber"> <b>No. Of Goats Dewormed:</b></label>
-		<input type="number" id="GoatNo" min=0 name="GoatNo" placeholder="Enter goat dewormed number" required/>
+		<input type="number" id="GoatNo" min=0  max=10000 name="GoatNo" placeholder="Enter goat dewormed number" required/>
 		<small></small>
 	</div><br> <br>
 
@@ -122,9 +122,10 @@
          <div class="field">
 			<label > <b> Designation :  </b></label>
 			<select name="Designation">
+				<option value="ad">AD</option>
  			    <option value="vas">VAS</option>
 			    <option value="vlo">VLO</option>
- 			    <option value="vjo">JVO</option>
+ 			    <option value="jvo">JVO</option>
 			    <option value="lsa">LSA</option>
    			    <option value="va">VA</option>
     			<option value="os">OS</option>
